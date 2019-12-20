@@ -90,6 +90,7 @@
             this.btnNewGame.TabIndex = 7;
             this.btnNewGame.Text = "New Game";
             this.btnNewGame.UseVisualStyleBackColor = false;
+            this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
             // 
             // lblBattleShip
             // 

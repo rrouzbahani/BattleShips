@@ -36,8 +36,13 @@ namespace BattleShips
         {
             if (RandomSelection == true)
             {
-                Board array = new Board();
-               
+                Board boardObj = new Board();
+               Random rGen = new Random();
+                int rNum = rGen.Next(9);
+                
+
+
+
             }
         }
         public override void Firing()

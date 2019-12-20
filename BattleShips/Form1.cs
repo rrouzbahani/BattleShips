@@ -16,5 +16,15 @@ namespace BattleShips
         {
             InitializeComponent();
         }
+
+        private void btnNewGame_Click(object sender, EventArgs e)
+        {
+            Selection form = new Selection();
+            form.Show();
+            Form1 form1 = new Form1();
+            
+        }
+        
     }
+}
 }

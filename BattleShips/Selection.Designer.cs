@@ -38,11 +38,11 @@
             this.BtnReset = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnRandom = new System.Windows.Forms.Button();
-            this.Button5 = new System.Windows.Forms.Button();
-            this.Button4 = new System.Windows.Forms.Button();
-            this.Button3 = new System.Windows.Forms.Button();
-            this.Button2 = new System.Windows.Forms.Button();
-            this.Button1 = new System.Windows.Forms.Button();
+            this.btnBattleship = new System.Windows.Forms.Button();
+            this.btnAircraft = new System.Windows.Forms.Button();
+            this.btnMedical = new System.Windows.Forms.Button();
+            this.btnFrigate = new System.Windows.Forms.Button();
+            this.btnDestroyer = new System.Windows.Forms.Button();
             this.btnSubmarine = new System.Windows.Forms.Button();
             this.lblTopDown = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -82,6 +82,7 @@
             this.btnBoard20.TabIndex = 28;
             this.btnBoard20.Text = "Ocean";
             this.btnBoard20.UseVisualStyleBackColor = true;
+            this.btnBoard20.Click += new System.EventHandler(this.btnBoard20_Click);
             // 
             // btnBoard10
             // 
@@ -91,6 +92,7 @@
             this.btnBoard10.TabIndex = 27;
             this.btnBoard10.Text = "Sea";
             this.btnBoard10.UseVisualStyleBackColor = true;
+            this.btnBoard10.Click += new System.EventHandler(this.btnBoard10_Click);
             // 
             // btnBoard7
             // 
@@ -100,6 +102,7 @@
             this.btnBoard7.TabIndex = 26;
             this.btnBoard7.Text = "Lake";
             this.btnBoard7.UseVisualStyleBackColor = true;
+            this.btnBoard7.Click += new System.EventHandler(this.btnBoard7_Click);
             // 
             // btnCont
             // 
@@ -136,51 +139,52 @@
             this.btnRandom.TabIndex = 22;
             this.btnRandom.Text = "Random Selection!";
             this.btnRandom.UseVisualStyleBackColor = true;
+            this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
             // 
-            // Button5
+            // btnBattleship
             // 
-            this.Button5.Location = new System.Drawing.Point(416, 309);
-            this.Button5.Name = "Button5";
-            this.Button5.Size = new System.Drawing.Size(194, 150);
-            this.Button5.TabIndex = 21;
-            this.Button5.Text = "Button1";
-            this.Button5.UseVisualStyleBackColor = true;
+            this.btnBattleship.Location = new System.Drawing.Point(416, 309);
+            this.btnBattleship.Name = "btnBattleship";
+            this.btnBattleship.Size = new System.Drawing.Size(194, 150);
+            this.btnBattleship.TabIndex = 21;
+            this.btnBattleship.Text = "Button1";
+            this.btnBattleship.UseVisualStyleBackColor = true;
             // 
-            // Button4
+            // btnAircraft
             // 
-            this.Button4.Location = new System.Drawing.Point(216, 309);
-            this.Button4.Name = "Button4";
-            this.Button4.Size = new System.Drawing.Size(194, 150);
-            this.Button4.TabIndex = 20;
-            this.Button4.Text = "Button1";
-            this.Button4.UseVisualStyleBackColor = true;
+            this.btnAircraft.Location = new System.Drawing.Point(216, 309);
+            this.btnAircraft.Name = "btnAircraft";
+            this.btnAircraft.Size = new System.Drawing.Size(194, 150);
+            this.btnAircraft.TabIndex = 20;
+            this.btnAircraft.Text = "Button1";
+            this.btnAircraft.UseVisualStyleBackColor = true;
             // 
-            // Button3
+            // btnMedical
             // 
-            this.Button3.Location = new System.Drawing.Point(16, 309);
-            this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(194, 150);
-            this.Button3.TabIndex = 19;
-            this.Button3.Text = "Button1";
-            this.Button3.UseVisualStyleBackColor = true;
+            this.btnMedical.Location = new System.Drawing.Point(16, 309);
+            this.btnMedical.Name = "btnMedical";
+            this.btnMedical.Size = new System.Drawing.Size(194, 150);
+            this.btnMedical.TabIndex = 19;
+            this.btnMedical.Text = "Button1";
+            this.btnMedical.UseVisualStyleBackColor = true;
             // 
-            // Button2
+            // btnFrigate
             // 
-            this.Button2.Location = new System.Drawing.Point(416, 153);
-            this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(194, 150);
-            this.Button2.TabIndex = 18;
-            this.Button2.Text = "Button1";
-            this.Button2.UseVisualStyleBackColor = true;
+            this.btnFrigate.Location = new System.Drawing.Point(416, 153);
+            this.btnFrigate.Name = "btnFrigate";
+            this.btnFrigate.Size = new System.Drawing.Size(194, 150);
+            this.btnFrigate.TabIndex = 18;
+            this.btnFrigate.Text = "Button1";
+            this.btnFrigate.UseVisualStyleBackColor = true;
             // 
-            // Button1
+            // btnDestroyer
             // 
-            this.Button1.Location = new System.Drawing.Point(216, 153);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(194, 150);
-            this.Button1.TabIndex = 17;
-            this.Button1.Text = "Button1";
-            this.Button1.UseVisualStyleBackColor = true;
+            this.btnDestroyer.Location = new System.Drawing.Point(216, 153);
+            this.btnDestroyer.Name = "btnDestroyer";
+            this.btnDestroyer.Size = new System.Drawing.Size(194, 150);
+            this.btnDestroyer.TabIndex = 17;
+            this.btnDestroyer.Text = "Button1";
+            this.btnDestroyer.UseVisualStyleBackColor = true;
             // 
             // btnSubmarine
             // 
@@ -216,11 +220,11 @@
             this.Controls.Add(this.BtnReset);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnRandom);
-            this.Controls.Add(this.Button5);
-            this.Controls.Add(this.Button4);
-            this.Controls.Add(this.Button3);
-            this.Controls.Add(this.Button2);
-            this.Controls.Add(this.Button1);
+            this.Controls.Add(this.btnBattleship);
+            this.Controls.Add(this.btnAircraft);
+            this.Controls.Add(this.btnMedical);
+            this.Controls.Add(this.btnFrigate);
+            this.Controls.Add(this.btnDestroyer);
             this.Controls.Add(this.btnSubmarine);
             this.Name = "Selection";
             this.Text = "Selection";
@@ -240,11 +244,11 @@
         internal System.Windows.Forms.Button BtnReset;
         internal System.Windows.Forms.Button btnBack;
         internal System.Windows.Forms.Button btnRandom;
-        internal System.Windows.Forms.Button Button5;
-        internal System.Windows.Forms.Button Button4;
-        internal System.Windows.Forms.Button Button3;
-        internal System.Windows.Forms.Button Button2;
-        internal System.Windows.Forms.Button Button1;
+        internal System.Windows.Forms.Button btnBattleship;
+        internal System.Windows.Forms.Button btnAircraft;
+        internal System.Windows.Forms.Button btnMedical;
+        internal System.Windows.Forms.Button btnFrigate;
+        internal System.Windows.Forms.Button btnDestroyer;
         internal System.Windows.Forms.Button btnSubmarine;
         private System.Windows.Forms.Label lblTopDown;
     }
