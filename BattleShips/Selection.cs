@@ -12,6 +12,7 @@ namespace BattleShips
 {
     public partial class Selection : Form
     {
+
         public Selection()
         {
             InitializeComponent();

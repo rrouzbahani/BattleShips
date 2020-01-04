@@ -36,10 +36,76 @@ namespace BattleShips
         {
             if (RandomSelection == true)
             {
-                Board boardObj = new Board();
-               Random rGen = new Random();
-                int rNum = rGen.Next(9);
                 
+                string chosen = "";
+                string ab, bc, cd, de, ef = "";
+                int size = 0;
+                string[] shipArray;
+                int i = 1;
+               Random rGen = new Random();
+                int rNum = rGen.Next(7);
+                
+                switch (chosen)
+                {
+                    case "Lake":
+                        {
+                            shipArray = new string[7];
+                            do
+                            {
+                                switch(rNum)
+                                {
+                                    case 1:
+                                        {
+                                            Ships sub = new Ships();
+                                            shipArray[i] = sub.ShipName;
+                                            break;
+                                        }
+                                    case 2:
+                                        {
+                                            Ships Frigate = new Ships(ab);
+                                            shipArray[i] = Frigate.ShipName;
+                                            break;
+                                        }
+                                    case 3:
+                                        {
+                                            Ships Dest = new Ships(ab, bc);
+                                            shipArray[i] = Dest.ShipName;
+                                            break;
+                                        }
+                                    case 4:
+                                        {
+
+                                            break;
+                                        }
+                                    case 5:
+                                        {
+
+                                            break;
+                                        }
+                                    case 6:
+                                        {
+
+                                            break;
+                                        }
+                                }
+
+
+                                i++;
+                            }while(i == size);
+
+                            break;
+                        }
+                    case "Sea":
+                        {
+                            shipArray = new string[10];
+                            break;
+                        }
+                    case "Ocean":
+                        {
+                            shipArray = new string[20];
+                            break;
+                        }
+                }
 
 
 

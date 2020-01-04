@@ -30,7 +30,7 @@
         {
             this.btnConfirmN = new System.Windows.Forms.Button();
             this.btnConfirmY = new System.Windows.Forms.Button();
-            this.lblShipStats = new System.Windows.Forms.Label();
+            this.statlable = new System.Windows.Forms.Label();
             this.btnBoard20 = new System.Windows.Forms.Button();
             this.btnBoard10 = new System.Windows.Forms.Button();
             this.btnBoard7 = new System.Windows.Forms.Button();
@@ -65,14 +65,14 @@
             this.btnConfirmY.Text = "Y";
             this.btnConfirmY.UseVisualStyleBackColor = true;
             // 
-            // lblShipStats
+            // statlable
             // 
-            this.lblShipStats.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lblShipStats.Location = new System.Drawing.Point(637, 221);
-            this.lblShipStats.Name = "lblShipStats";
-            this.lblShipStats.Size = new System.Drawing.Size(188, 191);
-            this.lblShipStats.TabIndex = 29;
-            this.lblShipStats.Text = "Ship Stats:\r\n\r\n-Ability1\r\n\r\n-Ability2";
+            this.statlable.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.statlable.Location = new System.Drawing.Point(637, 221);
+            this.statlable.Name = "statlable";
+            this.statlable.Size = new System.Drawing.Size(188, 191);
+            this.statlable.TabIndex = 29;
+            this.statlable.Text = "Ship Stats:\r\n\r\n-Ability1\r\n\r\n-Ability2";
             // 
             // btnBoard20
             // 
@@ -212,7 +212,7 @@
             this.Controls.Add(this.lblTopDown);
             this.Controls.Add(this.btnConfirmN);
             this.Controls.Add(this.btnConfirmY);
-            this.Controls.Add(this.lblShipStats);
+            this.Controls.Add(this.statlable);
             this.Controls.Add(this.btnBoard20);
             this.Controls.Add(this.btnBoard10);
             this.Controls.Add(this.btnBoard7);
@@ -236,7 +236,7 @@
 
         internal System.Windows.Forms.Button btnConfirmN;
         internal System.Windows.Forms.Button btnConfirmY;
-        internal System.Windows.Forms.Label lblShipStats;
+        internal System.Windows.Forms.Label statlable;
         internal System.Windows.Forms.Button btnBoard20;
         internal System.Windows.Forms.Button btnBoard10;
         internal System.Windows.Forms.Button btnBoard7;
