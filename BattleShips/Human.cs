@@ -44,11 +44,7 @@ namespace BattleShips
                 int i = 1;
                Random rGen = new Random();
                 int rNum = rGen.Next(7);
-                
-                switch (chosen)
-                {
-                    case "Lake":
-                        {
+              
                             shipArray = new string[7];
                             do
                             {
@@ -93,23 +89,10 @@ namespace BattleShips
                                 i++;
                             }while(i == size);
 
-                            break;
+                          
                         }
-                    case "Sea":
-                        {
-                            shipArray = new string[10];
-                            break;
-                        }
-                    case "Ocean":
-                        {
-                            shipArray = new string[20];
-                            break;
-                        }
-                }
-
-
-
-            }
+                    
+                
         }
         public override void Firing()
         {
